@@ -1,4 +1,5 @@
 import { Text, TextInput, View } from "react-native";
+import { FetchData } from "@/components/FetchData";
 
 export default function Index() {
 
@@ -12,7 +13,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Hello, I am {name}</Text>
+      <FetchData/>
+      <Text>Hello, I am Not {name}</Text>
       <TextInput
         style={{
           height: 40,
@@ -21,6 +23,7 @@ export default function Index() {
         }}
         defaultValue="Name me!"
       />
+      
     </View>
   );
 }
